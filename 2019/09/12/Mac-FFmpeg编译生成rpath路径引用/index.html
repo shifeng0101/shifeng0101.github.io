@@ -5,15 +5,19 @@
   
 
   
-  <title>归档: 2019/8 | ShiFeng&#39;s Blog</title>
+  <title>Mac FFmpeg编译生成rpath路径引用 | ShiFeng&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ShiFeng&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/08/index.html">
+  <meta name="description" content="记录一下： 1./configure --disable-x86asm --enable-rpath --enable-shared --enable-shared  --install_name_dir=&amp;apos;@rpath&amp;apos;  --extra-ldflags=&amp;apos;-mmacosx-version-min=10.8 -Wl,-rpath,@loader_path -Wl,-">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac FFmpeg编译生成rpath路径引用">
+<meta property="og:url" content="http://yoursite.com/2019/09/12/Mac-FFmpeg编译生成rpath路径引用/index.html">
 <meta property="og:site_name" content="ShiFeng&#39;s Blog">
+<meta property="og:description" content="记录一下： 1./configure --disable-x86asm --enable-rpath --enable-shared --enable-shared  --install_name_dir=&amp;apos;@rpath&amp;apos;  --extra-ldflags=&amp;apos;-mmacosx-version-min=10.8 -Wl,-rpath,@loader_path -Wl,-">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-12T09:47:21.246Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ShiFeng&#39;s Blog">
+<meta name="twitter:title" content="Mac FFmpeg编译生成rpath路径引用">
+<meta name="twitter:description" content="记录一下： 1./configure --disable-x86asm --enable-rpath --enable-shared --enable-shared  --install_name_dir=&amp;apos;@rpath&amp;apos;  --extra-ldflags=&amp;apos;-mmacosx-version-min=10.8 -Wl,-rpath,@loader_path -Wl,-">
   
     <link rel="alternate" href="/atom.xml" title="ShiFeng&#39;s Blog" type="application/atom+xml">
   
@@ -60,40 +64,54 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/27/我的博客完成了/" class="archive-article-date">
-  <time datetime="2019-08-27T01:50:58.000Z" itemprop="datePublished">8月 27</time>
+        <section id="main"><article id="post-Mac-FFmpeg编译生成rpath路径引用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/09/12/Mac-FFmpeg编译生成rpath路径引用/" class="article-date">
+  <time datetime="2019-09-12T09:47:21.000Z" itemprop="datePublished">2019-09-12</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/27/我的博客完成了/">我的博客完成了</a>
+    <h1 class="article-title" itemprop="name">
+      Mac FFmpeg编译生成rpath路径引用
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>记录一下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure --disable-x86asm --enable-rpath --enable-shared --enable-shared  --install_name_dir=&apos;@rpath&apos;  --extra-ldflags=&apos;-mmacosx-version-min=10.8 -Wl,-rpath,@loader_path -Wl,-rpath,@loader_path/../Frameworks -Wl,-rpath,@loader_path/lib -Wl,-rpath,@loader_path/../lib’</span><br></pre></td></tr></table></figure>
 
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/09/12/Mac-FFmpeg编译生成rpath路径引用/" data-id="ck0gif5bs000158sopl4jt01z" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/12/Mac-Qt-生成Framework库并添加rpath路径/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Mac Qt 生成Framework库并添加rpath路径</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         
